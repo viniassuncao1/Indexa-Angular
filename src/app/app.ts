@@ -1,12 +1,21 @@
 import { Component, signal } from '@angular/core';
+import { Container } from "./componente/container/container";
+import { CommonModule } from '@angular/common';
+import { Cabecalho } from './componente/cabecalho/cabecalho';
+import { Separador } from "./componente/separador/separador";
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    Container,
+    RouterOutlet,
+    CommonModule,
+    Cabecalho,
+    Separador],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('indexa');
+  alfabeto: string = 'abcdefghijklmnopqrstuvwxyz'; 
 }
