@@ -10,15 +10,16 @@
 <body>
   <app-container>
     <app-cabecalho></app-cabecalho>
+    <app-barraprocura>
+    </app-barraprocura>
 
     @for (letra of alfabeto; track letra) { <!-- Estrutura de repetição -->
       <app-separador> <!-- Componente separador -->  
         {{ letra }} <!-- Interpolação -->
       </app-separador> <!-- Fechamento do componente separador -->
-      <app-contato></app-contato>
+      <app-contato nome="Zacarias" telefone="99 99999-9999"></app-contato>
   }
-
-  </app-container>
+      </app-container>
 </body>
 
 </html>

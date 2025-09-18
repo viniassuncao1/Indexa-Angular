@@ -5,6 +5,7 @@ import { Cabecalho } from './componente/cabecalho/cabecalho';
 import { Separador } from "./componente/separador/separador";
 import { RouterOutlet } from '@angular/router';
 import { Contato } from './componente/contato/contato';
+import { Barraprocura } from './componente/barraprocura/barraprocura';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { Contato } from './componente/contato/contato';
     CommonModule,
     Cabecalho,
     Separador,
-    Contato
+    Contato,
+    Barraprocura,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

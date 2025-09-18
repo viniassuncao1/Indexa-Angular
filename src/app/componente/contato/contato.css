@@ -1,4 +1,4 @@
-.contato {
+/* .contato {
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     padding: 1px;
@@ -8,7 +8,7 @@
 }
 
 .botoes .editar {
-    background-color: #F8F9FA;
+    background-color: transparent;
     border: 0px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .botoes .excluir {
-    background-color: #F8F9FA;
+    background-color: transparent;
     border: 0px;
 }
 
@@ -31,5 +31,35 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-left: 10px;
+    margin-left: 1px;
+} */
+
+.contato ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.contato ul li {
+   list-style: none; 
+   color: #212529;
+   font-family: 'Montserrat';
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%;
+}
+
+.contato ul li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    gap: 2px;
+}
+
+.contato ul li button :hover {
+    background-color: #c0c9d1;
 }
