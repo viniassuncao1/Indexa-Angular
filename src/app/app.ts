@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Cabecalho } from './componente/cabecalho/cabecalho';
 import { Separador } from "./componente/separador/separador";
 import { RouterOutlet } from '@angular/router';
+import { Contato } from './componente/contato/contato';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,9 @@ import { RouterOutlet } from '@angular/router';
     RouterOutlet,
     CommonModule,
     Cabecalho,
-    Separador],
+    Separador,
+    Contato
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

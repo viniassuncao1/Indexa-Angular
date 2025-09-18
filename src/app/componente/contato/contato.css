@@ -1,0 +1,35 @@
+.contato {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.botoes .editar {
+    background-color: #F8F9FA;
+    border: 0px;
+}
+
+.botoes .editar:hover {
+    background-color: #E2E6EA;
+    cursor: pointer;
+}
+
+.botoes .excluir {
+    background-color: #F8F9FA;
+    border: 0px;
+}
+
+.botoes .excluir:hover {
+    background-color: #E2E6EA;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+}
