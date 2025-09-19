@@ -1,0 +1,17 @@
+.footer {
+  background-color: #e7f1ff;
+  color: #0d6efd;
+  margin-top: 80px;
+  display: flex;
+  padding: 17px 23px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--Blue-500, #0d6efd);
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+}
