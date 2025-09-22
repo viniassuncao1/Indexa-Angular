@@ -10,15 +10,22 @@
 <body>
   <app-container>
     <app-cabecalho></app-cabecalho>
-    <app-barraprocura>
-    </app-barraprocura>
 
-    @for (letra of alfabeto; track letra) { <!-- Estrutura de repetição -->
-    <app-separador> <!-- Componente separador -->
-      {{ letra }} <!-- Interpolação -->
-    </app-separador> <!-- Fechamento do componente separador -->
-    <app-contato nome="Zacarias" telefone="99 99999-9999"></app-contato>
+    <input class="input"
+      type="search"
+      placeholder="Digite para buscar"
+      [(ngModel)]="filtroPorTexto"
+    />
+ 
+@for (letra of alfabeto; track letra) {
+  @if (filtrarContatosPorLetra(letra).length > 0) {
+    <app-separador>{{ letra }}</app-separador>
+    @for (agenda of filtrarContatosPorLetra(letra); track agenda.id) {
+      <app-contato [nome]="agenda.nome" [telefone]="agenda.telefone"></app-contato>
     }
+  }
+}
+
   </app-container>
   <app-footer></app-footer>
 </body>

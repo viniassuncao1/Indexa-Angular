@@ -63,3 +63,11 @@
 .contato ul li button :hover {
     background-color: #c0c9d1;
 }
+
+#nome {
+    max-width: 30px;
+}
+
+#telefone {
+    padding-left: 12px;
+}

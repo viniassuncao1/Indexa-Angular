@@ -7,6 +7,7 @@ import { RouterOutlet } from '@angular/router';
 import { Contato } from './componente/contato/contato';
 import { Barraprocura } from './componente/barraprocura/barraprocura';
 import { Footer } from './componente/footer/footer';
+import { FormsModule } from '@angular/forms';
 
 interface Contatos {
     id: number
@@ -27,11 +28,29 @@ import agenda from './agenda.json'
     Contato,
     Barraprocura,
     Footer,
+    FormsModule
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  alfabeto: string = 'abcdefghijklmnopqrstuvwxyz'; 
+  alfabeto: string[] = 'abcdefghijklmnopqrstuvwxyz'.split(''); 
   agenda: Contatos[] = agenda;
+
+  filtroPorTexto: string = ''
+
+  filtrarContatosPorTexto (): Contatos[] {
+    if (!this.filtrarContatosPorTexto) {
+      return this.agenda
+    }
+    return this.agenda.filter(agenda => {
+      return agenda.nome.toLowerCase().includes(this.filtroPorTexto.toLowerCase())
+    })
+  }
+
+  filtrarContatosPorLetra(letra : string) : Contatos[] {
+    return this.filtrarContatosPorTexto().filter(contato => {
+      return contato.nome.toLowerCase().startsWith(letra)
+    })
+  }
 }
