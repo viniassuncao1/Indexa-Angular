@@ -16,6 +16,7 @@ interface Contatos {
 }
 
 import agenda from './agenda.json'
+import { FormularioContato } from './pages/formulario-contato/formulario-contato';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +29,8 @@ import agenda from './agenda.json'
     Contato,
     Barraprocura,
     Footer,
-    FormsModule
+    FormsModule,
+    FormularioContato
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
