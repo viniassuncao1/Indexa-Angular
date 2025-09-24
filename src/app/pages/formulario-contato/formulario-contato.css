@@ -1,3 +1,5 @@
+
+
 header .cabecalho-link {
   display: flex;
   flex-direction: column;
@@ -62,12 +64,13 @@ input, textarea {
 }
 
 input#redes {
+  border-left: #E9ECEF;
   border-radius: 0 4px 4px 0;
   padding: 0 12px;
 }
 
 input#aniversario {
-  width: 224px;
+  width: 100%;
   display: block;
 }
 
@@ -108,6 +111,7 @@ input:focus {
   border: 1px solid #CED4DA;
   background-color: #E9ECEF;
   border-color: black;
+  border-right: #a8a3a3;
   font-family: 'Montserrat';
   font-size: 15px;
   font-weight: 400;
@@ -164,4 +168,26 @@ input:focus {
   font-size: 16px;
   color: red;
   margin-bottom: 12px;
+}
+
+
+.voltar button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  border-color: transparent;
+  background-color: transparent;
+  color: #0D6EFD ;
+
+}
+
+.voltar button img {
+  display: flex;
+  padding-top: 4px;
+}
+
+.voltar button:hover  {
+  background-color: #a8a3a3;
 }
