@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    align-items: center; /* Bom para alinhar verticalmente */
+    font-family: 'Montserrat';
+    padding: 10px;
+    gap: 20px;
+    background-color: #3D8BFD;
+}
+
+.nav h1 {
+    /* Pede para a margem direita ocupar todo o espaço disponível,
+       empurrando os outros itens para o final. */
+    margin-right: auto;
+}

@@ -1,0 +1,28 @@
+  <app-container>
+    <app-cabecalho></app-cabecalho>
+
+    <input class="input"
+      type="search"
+      placeholder="Digite para buscar"
+      [(ngModel)]="filtroPorTexto"
+    />
+
+    <section class="adicionar-contato">
+      <button routerLink="/formulario">
+        <img src="../../../assets/imagens/plus.png" alt="">
+        <span>Adicionar Contato</span>
+      </button>
+    </section>
+ 
+@for (letra of alfabeto; track letra) {
+  @if (filtrarContatosPorLetra(letra).length > 0) {
+    <app-separador>
+        {{ letra }}
+    </app-separador>
+    @for (agenda of filtrarContatosPorLetra(letra); track agenda.id) {
+      <app-contato [nome]="agenda.nome" [telefone]="agenda.telefone"></app-contato>
+    }
+  }
+}
+
+</app-container>
