@@ -185,7 +185,7 @@ input:focus {
 
 .voltar button img {
   display: flex;
-  padding-top: 4px;
+  padding-top: 0px;
 }
 
 .voltar button:hover  {
